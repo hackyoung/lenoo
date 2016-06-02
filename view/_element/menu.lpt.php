@@ -35,12 +35,10 @@ $list = [
 <style>
 .menu {
 }
-
 .menu>ul {
     margin: 0px;
     padding: 0px;
 }
-
 .menu>ul>li {
     list-style: none;
 }

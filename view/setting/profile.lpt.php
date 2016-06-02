@@ -1,3 +1,30 @@
+<style>
+    .a-item {
+        margin: 20px 0px;
+    }
+    .a-item>h4 {
+        margin: 5px;
+    }
+    
+    .a-item>.leno-input {
+        width: 80%;
+        border: none;
+    }
+    .portrait-fix {
+        display: flex;
+        display: -webkit-flex;
+        align-items: flex-end;
+    }
+    .portrait-fix>img {
+        width: 150px;
+        height: 150px;
+        border: 1px solid #999;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6) inset;
+        -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6) inset;
+        margin-right: 10px;
+        vertical-align: bottom;
+    }
+</style>
 <extend name="global._layout.setting">
     <fragment name="setting">
         <div class="portrait-fix">
@@ -31,32 +58,5 @@
             <h4>居住地</h4>
             <input type="text" class="leno-input" placeholder="居住地址" />
         </div>
-        <style>
-            .a-item {
-                margin: 20px 0px;
-            }
-            .a-item>h4 {
-                margin: 5px;
-            }
-            
-            .a-item>.leno-input {
-                width: 80%;
-                border: none;
-            }
-            .portrait-fix {
-                display: flex;
-                display: -webkit-flex;
-                align-items: flex-end;
-            }
-            .portrait-fix>img {
-                width: 150px;
-                height: 150px;
-                border: 1px solid #999;
-                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6) inset;
-                -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6) inset;
-                margin-right: 10px;
-                vertical-align: bottom;
-            }
-        </style>
     </fragment>
 </extend>
