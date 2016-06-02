@@ -1,7 +1,4 @@
 <?php
-$user = [
-    'info' => ['hello'],
-];
 $this->set('user', [
     'home' => '',
     'portrait' => 'https://avatars1.githubusercontent.com/u/3030341?v=3&s=460',
@@ -11,7 +8,7 @@ $this->set('menu', [
     [ 'id' => 'test_1', 'title' => '工人', 'href' => '/workers'],
     [ 'id' => 'test_1', 'title' => '文章', 'href' => '/articles'],
     [ 'id' => 'test_1', 'title' => '个人信息', 'href' => '/user' ],
-    [ 'id' => 'test_1', 'title' => '设置', 'href' => '' ],
+    [ 'id' => 'test_1', 'title' => '设置', 'href' => '/setting/profile' ],
 ]);
 $this->set('background', 'http://s.qdcdn.com/cl/13682051,800,450.jpg');
 $login = [

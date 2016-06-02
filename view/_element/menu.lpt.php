@@ -25,6 +25,7 @@
 }
 .menu>ul>li {
     list-style: none;
+    padding: 5px 0px;
 }
 .menu>ul>li>a {
     color: #666;
