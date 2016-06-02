@@ -7,22 +7,6 @@
  *
  * @param title
  */
-$title = '用户设置';
-$list = [
-    [
-        'title' => '基本信息',
-        'url' => ''
-    ], [
-        'title' => '帐号设置',
-        'url' => ''
-    ], [
-        'title' => '文章',
-        'url' => ''
-    ], [
-        'title' => '团队',
-        'url' => ''
-    ]
-];
 ?>
 <div class="menu">
     <h3>{$title}</h3>
@@ -41,5 +25,8 @@ $list = [
 }
 .menu>ul>li {
     list-style: none;
+}
+.menu>ul>li>a {
+    color: #666;
 }
 </style>

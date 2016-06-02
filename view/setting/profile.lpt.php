@@ -27,6 +27,7 @@
 </style>
 <extend name="global._layout.setting">
     <fragment name="setting">
+        <h3>修改个人信息</h3>
         <div class="portrait-fix">
             <img src="https://avatars1.githubusercontent.com/u/3030341?v=3&s=460" />
             <div>
