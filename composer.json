@@ -1,0 +1,6 @@
+{
+    "require" : {
+        "hackyoung/leno" : "v0.0.2.x-dev",
+        "leno/view" : "v0.4.0.x-dev"
+    }
+}
