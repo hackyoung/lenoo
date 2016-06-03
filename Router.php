@@ -8,8 +8,12 @@ class Router extends \Leno\Routing\Router
    // 如果需要编写规则，则取消注释下面的代码
    //  
    protected $rules = [
+
+       '^user/${1}/articles/focused' => 'user/articles/focused/${1}', 
+       '^user/${1}/articles/templates' => 'user/articles/templates/${1}', 
+       '^user/${1}/articles/drafts' => 'user/articles/drafts/${1}', 
        '^user/${1}/articles' => 'user/articles/${1}', 
-       '^user/${1}/profile' => 'user/profile/${1}', 
+
        '^user/${1}/tasks' => 'user/tasks/${1}', 
    ];
    // 

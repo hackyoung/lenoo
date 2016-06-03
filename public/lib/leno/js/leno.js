@@ -1853,6 +1853,14 @@ leno.editor = (function() {
             left: 1,
             right: 1
         }
+        //, operation: [
+        //    {
+        //        label: 'hello',
+        //        click: function() {
+        //        
+        //        }
+        //    }   
+        //]
     };
 
     var lenoEditor = function(opts) {

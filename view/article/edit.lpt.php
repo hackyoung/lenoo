@@ -1,3 +1,33 @@
+<style>
+    .final {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .final .tag {
+        margin: 5px;
+        padding: 5px;
+    }
+    .final .tag:hover {
+        text-decoration: underline;
+        color: green;
+        cursor: pointer;
+    }
+    .final .more {
+        text-decoration: underline;
+    }
+</style>
+<script>
+    $(document).ready(function() {
+        new leno.editor({ id: 'edit', toolbarFixedHeight: 80, operation: [{
+            label: '保存为模板',
+            click: function() {
+                console.log('click');
+            }
+        }]});
+    });
+</script>
 <extend name="global._layout.two_columns">
     <fragment name="one">
         <div class="edit-article">
@@ -14,38 +44,10 @@
                     <span class="tag">HTML5</span>
                     <a href="#" class="more">更多</a>
                 </div>
-                <button class="leno-btn">提交</button>
+                <button class="leno-btn">保存草稿</button>
+                <button class="leno-btn">发布</button>
             </div>
         </div>
-<style>
-.final {
-    display: flex;
-    display: -webkit-flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.final .tag {
-    margin: 5px;
-    padding: 5px;
-}
-
-.final .tag:hover {
-    text-decoration: underline;
-    color: green;
-    cursor: pointer;
-}
-
-.final .more {
-    text-decoration: underline;
-}
-
-</style>
-        <script>
-$(document).ready(function() {
-    new leno.editor({ id: 'edit', toolbarFixedHeight: 80});
-});
-        </script>
     </fragment>
     <fragment name="two">
         <view name="global._element.menu" />
