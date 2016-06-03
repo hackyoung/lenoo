@@ -7,7 +7,7 @@ $this->set('menu', [
     [ 'id' => 'test_1', 'title' => '任务', 'href' => '/tasks' ],
     [ 'id' => 'test_1', 'title' => '工人', 'href' => '/workers'],
     [ 'id' => 'test_1', 'title' => '文章', 'href' => '/articles'],
-    [ 'id' => 'test_1', 'title' => '个人信息', 'href' => '/user' ],
+    [ 'id' => 'test_1', 'title' => '个人信息', 'href' => '/user/articles' ],
     [ 'id' => 'test_1', 'title' => '设置', 'href' => '/setting/profile' ],
 ]);
 $this->set('background', 'http://s.qdcdn.com/cl/13682051,800,450.jpg');

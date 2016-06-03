@@ -10,12 +10,6 @@ $this->set('list', [
     ], [
         'title' => '头部图片设置',
         'url' => '/setting/cover'
-    ], [
-        'title' => '文章',
-        'url' => ''
-    ], [
-        'title' => '团队',
-        'url' => ''
     ]
 ]);
 ?>

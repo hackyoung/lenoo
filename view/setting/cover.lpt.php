@@ -20,6 +20,11 @@
     align-items: center;
 }
 
+.selected,
+.cover-wrapper .item {
+    background-position: center center;
+}
+
 .cover-wrapper .item {
     width: 45%;
     margin-bottom: 10px;
@@ -58,7 +63,7 @@
 <extend name="global._layout.setting">
     <fragment name="setting">
         <h3>修改顶部图片</h3>
-        <div class="selected" style="http://s.qdcdn.com/cl/13682051,800,450.jpg">
+        <div class="selected" style="background-image: url(http://s.qdcdn.com/cl/13682051,800,450.jpg)">
             <button class="leno-btn">上传</button>
         </div>
         <h3>大家都在用</h3>

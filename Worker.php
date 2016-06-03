@@ -1,7 +1,6 @@
 <?php
 class Worker extends \Leno\Worker
 {
-    
     // 需要自定义异常处理重写下面的方法
     public function handleException($e)
     {
