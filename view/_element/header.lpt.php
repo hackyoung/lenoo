@@ -1,4 +1,5 @@
 <?php
+$user = ['info' => ['hello' => 'world']];
     $this->set('user', [
         'home' => '',
         'portrait' => 'https://avatars1.githubusercontent.com/u/3030341?v=3&s=460',
@@ -28,20 +29,8 @@
                 <view name="leno._element.register" data="{$register}" />
             </empty>
             <notempty name="{$user.info}">
-                <div class="user-info">
-                    <div class="input-line">
-                        <span>姓名:</span><span>hackyoung</span>
-                    </div>
-                    <div class="input-line">
-                        <span>年龄:</span><span>24(岁)</span>
-                    </div>
-                    <div class="input-line">
-                        <div class="footer">
-                            <span class="zmdi zmdi-blogger">(3000)</span>
-                            <span class="zmdi zmdi-crop-din">(3000)</span>
-                            <span class="zmdi zmdi-group">(3000)</span>
-                        </div>
-                    </div>
+                <div class="user-info-container">
+                    <view name="global._element.user.profile" />
                 </div>
             </notempty>
             <span class="zmdi zmdi-close close"></span>
@@ -92,14 +81,6 @@
         -moz-transition: all 0.5s ease-out;
         -webkit-transition: all 0.5s ease-out;
     }
-    .begin .user-info {
-        width: 400px;
-    }
-    .begin .user-info .footer {
-        display: flex;
-        display: -webkit-flex;
-        justify-content: space-between;
-    }
     .begin .close {
         background-color: #444;
         width: 20px;
@@ -113,5 +94,19 @@
     }
     .begin .close:hover {
         cursor: pointer;
+    }
+    .begin .user-info-container {
+        width: 500px;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.4) inset;
+    }
+    .begin .user-info-container a {
+        color: green;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    .begin .user-info-container .user-profile img {
+        width: 150px;
+        height: 150px;
     }
 </style>
