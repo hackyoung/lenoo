@@ -36,10 +36,16 @@ $user = ['info' => ['hello' => 'world']];
             <span class="zmdi zmdi-close close"></span>
         </div>
     </fragment>
+    <fragment name="right">
+        <div class="leno-input-group">
+            <label class="zmdi zmdi-search"></label>
+            <input type="text" class="leno-input" placeholder="输入关键字搜索" />
+        </div>
+    </fragment>
 </extend>
 <script>
     (function() {
-        $('.leno-global-header>div.bottom>a').click(function() {
+        $('.leno-global-header>div.bottom>div.left>a').click(function() {
             begin.enter();
             return false;
         });
@@ -47,6 +53,7 @@ $user = ['info' => ['hello' => 'world']];
             begin.leave();
         });
     })();
+
     var begin = (function() {
 
         var scroll_top = false;
