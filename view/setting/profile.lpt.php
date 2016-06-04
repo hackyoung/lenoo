@@ -28,36 +28,39 @@
 <extend name="global._layout.setting">
     <fragment name="setting">
         <h3>修改个人信息</h3>
-        <div class="portrait-fix">
-            <img src="https://avatars1.githubusercontent.com/u/3030341?v=3&s=460" />
-            <div>
-                <div>可以修改头像的哦，亲！！！</div>
-                <button class="leno-btn">+修改头像</button>
+        <div>
+            <div class="portrait-fix">
+                <img src="https://avatars1.githubusercontent.com/u/3030341?v=3&s=460" />
+                <div>
+                    <div>可以修改头像的哦，亲！！！</div>
+                    <button class="leno-btn">+修改头像</button>
+                </div>
             </div>
-        </div>
-        <div class="a-item">
-            <h4>姓名</h4>
-            <input type="text" class="leno-input" placeholder="输入你的姓名" />
-        </div>
-        <div class="a-item">
-            <h4>邮箱</h4>
-            <input type="text" class="leno-input" placeholder="输入你的邮箱" />
-        </div>
-        <div class="a-item">
-            <h4>手机号</h4>
-            <input type="text" class="leno-input" placeholder="输入你的手机号码" />
-        </div>
-        <div class="a-item">
-            <h4>介绍</h4>
-            <textarea class="leno-input" placeholder="说说你自己"></textarea>
-        </div>
-        <div class="a-item">
-            <h4>个人主页</h4>
-            <input type="text" class="leno-input" placeholder="你的个人主页" />
-        </div>
-        <div class="a-item">
-            <h4>居住地</h4>
-            <input type="text" class="leno-input" placeholder="居住地址" />
+            <div class="a-item">
+                <h4>姓名</h4>
+                <input type="text" class="leno-input" placeholder="输入你的姓名" />
+            </div>
+            <div class="a-item">
+                <h4>邮箱</h4>
+                <input type="text" class="leno-input" placeholder="输入你的邮箱" />
+            </div>
+            <div class="a-item">
+                <h4>手机号</h4>
+                <input type="text" class="leno-input" placeholder="输入你的手机号码" />
+            </div>
+            <div class="a-item">
+                <h4>介绍</h4>
+                <textarea class="leno-input" placeholder="说说你自己"></textarea>
+            </div>
+            <div class="a-item">
+                <h4>个人主页</h4>
+                <input type="text" class="leno-input" placeholder="你的个人主页" />
+            </div>
+            <div class="a-item">
+                <h4>居住地</h4>
+                <input type="text" class="leno-input" placeholder="居住地址" />
+            </div>
+            <button class="leno-btn">保存</button>
         </div>
     </fragment>
 </extend>

@@ -102,7 +102,7 @@ $user = ['info' => ['hello' => 'world']];
         box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.4) inset;
     }
     .begin .user-info-container a {
-        color: green;
+        color: white;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     }
     .begin .user-info-container .user-profile img {
