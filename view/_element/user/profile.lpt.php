@@ -66,7 +66,7 @@
         <div class="oper">
             <a href="/setting/profile">修改资料</a>
             <a href="/article/editor">写文章</a>
-            <a href="">发布任务</a>
+            <a href="/task/editor">发布任务</a>
             <a href="">创建团队</a>
         </div>
     </div>

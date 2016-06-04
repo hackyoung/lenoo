@@ -1720,6 +1720,8 @@ leno.editor = (function() {
         var toolbar = document.createElement('div');
         toolbar.setAttribute('class', 'editor-toolbar');
         root.appendChild(toolbar);
+        var nexttoolbar = document.createElement('div');
+        root.appendChild(nexttoolbar);
         var content = document.createElement('iframe');
         content.setAttribute('src', '');
         content.setAttribute('frameborder', '0');
@@ -1928,26 +1930,7 @@ leno.editor = (function() {
                 var oldtoolbarfixed = editor.toolbarfixed;
                 if(opts.toolbarFix) {
                     var sheight = leno.scrollTop();
-                    if(sheight + opts.toolbarFixedHeight >= pos.y) {
-                        editor.toolbarfixed = true;
-                    } else {
-                        editor.toolbarfixed = false;
-                    }
-                    if(editor.toolbarfixed != oldtoolbarfixed ) {
-                        if(editor.toolbarfixed) {
-                            $(toolbar).addClass('stickTop');
-                            $(toolbar).css({
-                                width: editor.getSize().width - 2 + 'px',
-                                top: opts.toolbarFixedHeight + 'px',
-                                left: pos.x + 1
-                            });
-                        } else {
-                            $(toolbar).removeClass('stickTop');
-                            $(toolbar).css('top', 'auto');
-                            $(toolbar).css('left', 'auto');
-                        }
-                        editor.contentResize();
-                    }
+                    $(toolbar).css('top', Math.max(pos.y, sheight + opts.toolbarFixedHeight));
                     if(sheight + opts.toolbarFixedHeight > pos.y +
                             $(root).height() - $(toolbar).height()) {
                         $(toolbar).hide();
@@ -2006,6 +1989,11 @@ leno.editor = (function() {
         frame.setAttribute('width', w);
         $(toolbar).css({
             width: this.getSize().width - 2,
+            left: leno.position(root).x + 1
+        });
+        $(toolbar).next().css({
+            width: this.getSize().width - 2,
+            height: $(toolbar).height() + 10,
             left: leno.position(root).x + 1
         });
         if(this.toolbarfixed) {

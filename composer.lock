@@ -184,12 +184,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hackyoung/leno.git",
-                "reference": "7971b22b0344ff19aa3f81d339f32a0717e24d90"
+                "reference": "801219970df922414bc0ae40a1a7fa17ccb15588"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hackyoung/leno/zipball/7971b22b0344ff19aa3f81d339f32a0717e24d90",
-                "reference": "7971b22b0344ff19aa3f81d339f32a0717e24d90",
+                "url": "https://api.github.com/repos/hackyoung/leno/zipball/801219970df922414bc0ae40a1a7fa17ccb15588",
+                "reference": "801219970df922414bc0ae40a1a7fa17ccb15588",
                 "shasum": ""
             },
             "require": {
@@ -215,7 +215,7 @@
                 "MIT"
             ],
             "description": "A simple clean framework",
-            "time": "2016-05-28 17:51:56"
+            "time": "2016-06-03 19:55:03"
         },
         {
             "name": "leno/view",
@@ -223,12 +223,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hackyoung/lenoview.git",
-                "reference": "111da6ad4b8caa102cd5e99cf7ffaeb7864fa9e3"
+                "reference": "c5680ab785211dfe88b75c8962cfc5965e7d000d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hackyoung/lenoview/zipball/111da6ad4b8caa102cd5e99cf7ffaeb7864fa9e3",
-                "reference": "111da6ad4b8caa102cd5e99cf7ffaeb7864fa9e3",
+                "url": "https://api.github.com/repos/hackyoung/lenoview/zipball/c5680ab785211dfe88b75c8962cfc5965e7d000d",
+                "reference": "c5680ab785211dfe88b75c8962cfc5965e7d000d",
                 "shasum": ""
             },
             "type": "library",
@@ -238,7 +238,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2016-06-02 02:00:53"
+            "time": "2016-06-04 06:39:59"
         },
         {
             "name": "monolog/monolog",

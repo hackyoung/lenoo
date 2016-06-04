@@ -5,6 +5,6 @@ class Template extends \Controller\App
 {
     public function index()
     {
-        $this->render('global.user.articles.template');
+        $this->render('global.user.articles.templates');
     }
 }
